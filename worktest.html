@@ -1,5 +1,12 @@
 <html>
   <body>
-    <h1>Work Test 1</h1>
+    <h1 id="test">Work Test 1</h1>
   </body>
+  <script>
+    function loop(dummy) {
+      while (true) 
+        document.getElementById("test").innerHTML = new Date().getTime();
+    }
+    setInterval(loop, 1000);
+  </script>
 </html>
