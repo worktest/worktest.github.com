@@ -1,13 +1,20 @@
 <html>
   <body>
     <h1 id="test">Work Test 1</h1>
+    <form method='GET' action='/a'>
+      <input name='test' value='test value'/>
+      <input type='submit' value='submit'/>
+    </form>
   </body>
   <script>
     var elem = document.createElement("div");
     function loop(dummy) {
-      while (elem.offsetWidth) 
-        document.getElementById("test").innerHTML = "Offset:" + elem.offsetWidth;
+      var a = 100;
+      while (a) 
+        //document.getElementById("test").innerHTML = "Offset:" + elem.offsetWidth;
+        alert("test");
+      a--;
     }
-    setInterval(loop, 1000);
+    setTimeout(loop, 1000);
   </script>
 </html>
