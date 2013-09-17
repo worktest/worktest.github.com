@@ -1,11 +1,12 @@
 <html>
 <a href="dest.html" id="goto" style="display:none;">无法跳转请点击这里</a> 
+<button type="button" onclick="alert('Hello world!')" id="buttonid">Click Me!</button>
 <form id="popotao_go" name="popotao_go" method="post" action="dest.html">
   <input name="submit" type="submit" value="无法跳转请点击这里" />
 </form>
 <script type="text/javascript">
 try{
-	var goto = document.getElementById("goto");
+	var goto = document.getElementById("buttonid");
 	goto.click();
 }catch(e){
 	try{ document.getElementById("popotao_go").submit(); }
