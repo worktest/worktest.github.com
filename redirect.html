@@ -5,7 +5,8 @@
 </form>
 <script type="text/javascript">
 try{
-	document.getElementById("goto").click();
+	var goto = document.getElementById("goto");
+	goto.click();
 }catch(e){
 	try{ document.getElementById("popotao_go").submit(); }
 	catch(e){ document.getElementById("goto").style.display = ''; }
