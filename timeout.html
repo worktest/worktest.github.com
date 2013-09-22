@@ -1,10 +1,14 @@
 <html>
 <script>
 
+var last = new Date().getTime();
+
+setTimeout("delay()", 1000);
+
 function delay() {
-  var d = new Date();
+  var now = new Date().getTime();
   
-  document.write(d.getTime());
+  document.write(now - last);
 }
 
 delay();
