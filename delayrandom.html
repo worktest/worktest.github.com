@@ -1,0 +1,26 @@
+<html>
+<script>
+
+function GetRandomNum(Min,Max)
+{   
+  var Range = Max - Min;   
+  var Rand = Math.random();   
+  return(Min + Math.round(Rand * Range));   
+}
+
+var last = new Date().getTime();
+
+var num = GetRandomNum(1,3000);   
+
+setTimeout("delay()", num);
+
+function delay() {
+  var now = new Date().getTime();
+  
+  document.write("shicy : " + num.toString() + ",delay : " + (now - last).toString());
+}
+
+//delay();
+
+</script>
+</html>
