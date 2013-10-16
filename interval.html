@@ -1,0 +1,19 @@
+<html>
+<script>
+
+var last = new Date().getTime();
+
+setInterval("delay()", 1000);
+
+function delay() {
+  
+  var now = new Date().getTime();
+  
+  document.write(now - last);
+  last = new Date().getTime();
+}
+
+//delay();
+
+</script>
+</html>
