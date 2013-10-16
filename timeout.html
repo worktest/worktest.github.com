@@ -3,12 +3,13 @@
 
 var last = new Date().getTime();
 
-setTimeout("delay()", 1000);
+setInterval("delay()", 1000);
 
 function delay() {
   var now = new Date().getTime();
   
   document.write(now - last);
+  
 }
 
 //delay();
